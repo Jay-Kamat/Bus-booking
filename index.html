@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stellar Luxury Booking</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bus Ticket Booking</h1>
+        
+        <div class="form-section">
+            <label>Date: <input type="date" id="date-input"></label>
+            <label>Time: <input type="time" id="time-input"></label>
+        </div>
+
+        <h3>Select Your Seats</h3>
+        <div class="legend">
+            <span><div class="legend-box available"></div> Available</span>
+            <span><div class="legend-box selected"></div> Selected</span>
+            <span><div class="legend-box occupied"></div> Occupied</span>
+        </div>
+
+        <div id="bus-layout">
+
+        </div>
+
+        <div class="summary-section">
+            <h3>Booking Details</h3>
+            <p>Selected Seats: <span id="seat-list">None</span></p>
+            <p>Total Price: ₹<span id="total-price">0</span></p>
+            <button id="book-btn" disabled>Book Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
